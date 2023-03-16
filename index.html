@@ -1,0 +1,42 @@
+
+<html>
+  <head>
+    <title>Animal Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <center>
+        <!--Header - Contains title and heading notes-->
+        <div class = "col-xs-12 header_div text-center">
+          <h2>Animal Sound Recognition</h2>
+          <p>Note: You can use sounds like lion roars, dog barking, cats meowing, and birds chriping to make the webapp recognize it.</p>
+        </div>
+        <!--Main div which contains buttons and images-->
+        <div class = "main_div">
+          <br>
+          <button class = "btn btn-warning" onclick = "startClassification()"> START RECORDING </button>
+          <h3>I can hear: </h3><b id = "result_label"></b>
+          <h4>Accuracy: </h4><b id = "result_confidence"></b>
+          <br>
+          <!--Images for the animals-->
+          <img src = "Dog.jpeg" id = "dog" width = 300 height = 300>
+          <img src = "lion.jpg" id = "lion" width = 300 height = 300>
+          <img src = "cat.jpg" id = "cat" width = 300 height = 300>
+          <img src = "Bird.jpeg" id = "bird" width = 300 height = 300>
+        </div>
+        <br><br><br>
+        <!--Copy Right footer - For getting plagurism protection-->
+        <div class = "copy_right_footer">
+           Developed by Rudra Nalawade
+        </div>
+      </center>
+<script src="main.js"></script>
+  </body>
+</html>
